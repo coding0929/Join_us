@@ -21,6 +21,15 @@ var connection=mysql.createConnection({
     database:'heroku_6a30302df1c32f7'
 });
 
+// connection.connect(function(err) {
+//   if (err) throw err;
+//   console.log("Connected!");
+//   var sql = "CREATE TABLE users(email VARCHAR(255) PRIMARY KEY,create_at TIMESTAMP DEFAULT NOW())";
+//   connection.query(sql, function (err, result) {
+//     if (err) throw err;
+//     console.log("Table created");
+//   });
+// });
 
 
 // var data = [];
@@ -37,6 +46,8 @@ var connection=mysql.createConnection({
 //   console.log(err);
 //   console.log(result);
 // });
+
+
 
 app.get("/", function(req, res){
     var q="select count(*) as count from users";
