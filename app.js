@@ -7,11 +7,18 @@ var app = express();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname+"/public"));
 //app.set("view engine", "ejs");
+// var connection=mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     password: 'root',
+//     database:'join_us'
+// });
+
 var connection=mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database:'join_us'
+    host: 'us-cdbr-east-06.cleardb.net',
+    user: 'b02c0a88c4de3d',
+    password: '80b563b9',
+    database:'heroku_6a30302df1c32f7'
 });
 
 
