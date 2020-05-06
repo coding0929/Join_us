@@ -14,6 +14,8 @@ var connection=mysql.createConnection({
     database:'join_us'
 });
 
+
+
 // var data = [];
 // for(var i = 0; i < 500; i++){
 //     data.push([
